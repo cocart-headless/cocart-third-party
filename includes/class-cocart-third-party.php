@@ -29,6 +29,39 @@ class Package {
 	}
 
 	/**
+	 * Return the name of the package.
+	 *
+	 * @access public
+	 * @static
+	 * @return string
+	 */
+	public static function get_name() {
+		return 'CoCart Third Party';
+	} // END get_name()
+
+	/**
+	 * Return the version of the package.
+	 *
+	 * @access public
+	 * @static
+	 * @return string
+	 */
+	public static function get_version() {
+		return self::$version;
+	} // END get_version()
+
+	/**
+	 * Return the path to the package.
+	 *
+	 * @access public
+	 * @static
+	 * @return string
+	 */
+	public static function get_path() {
+		return dirname( __DIR__ );
+	} // END get_path()
+
+	/**
 	 * Load support for third-party hosts.
 	 *
 	 * @access public
