@@ -34,7 +34,7 @@ class Package {
 	 * @access public
 	 */
 	public function include_hosts() {
-		include_once COCART_ABSPATH . 'includes/third-party/hosting/pantheon/class-cocart-host-pantheon.php'; // Pantheon.io.
+		include_once dirname( __FILE__ ) . '/hosting/pantheon/class-cocart-host-pantheon.php'; // Pantheon.io.
 	}
 
 	/**
@@ -43,8 +43,8 @@ class Package {
 	 * @access public
 	 */
 	public function include_plugins() {
-		include_once COCART_ABSPATH . 'includes/third-party/plugin/jwt-auth-by-useful-team/class-cocart-plugin-jwt-auth.php'; // JWT Auth.
-		include_once COCART_ABSPATH . 'includes/third-party/plugin/taxjar/class-cocart-plugin-taxjar.php'; // TaxJar.
+		include_once dirname( __FILE__ ) . '/plugin/jwt-auth-by-useful-team/class-cocart-plugin-jwt-auth.php'; // JWT Auth.
+		include_once dirname( __FILE__ ) . '/plugin/taxjar/class-cocart-plugin-taxjar.php'; // TaxJar.
 	}
 
 } // END class.
