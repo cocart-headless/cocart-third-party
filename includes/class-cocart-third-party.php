@@ -5,7 +5,7 @@
  * @author  Sébastien Dumont
  * @package CoCart\Third Party
  * @since   2.8.1
- * @version 3.0.0
+ * @version 3.4.0
  * @license GPL-2.0+
  */
 
@@ -78,6 +78,7 @@ class Package {
 	public function include_plugins() {
 		include_once dirname( __FILE__ ) . '/plugin/jwt-auth-by-useful-team/class-cocart-plugin-jwt-auth.php'; // JWT Auth.
 		include_once dirname( __FILE__ ) . '/plugin/taxjar/class-cocart-plugin-taxjar.php'; // TaxJar.
+		include_once dirname( __FILE__ ) . '/plugin/yoast-seo/class-cocart-plugin-yoast-seo.php'; // Yoast SEO.
 	}
 
 } // END class.
