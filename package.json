@@ -1,0 +1,31 @@
+{
+	"title": "CoCart Third Party Package",
+	"name": "cocart-third-party",
+	"version": "1.0.0",
+	"private": false,
+	"contributors": [
+		"sebd86",
+		"cocartforwc"
+	],
+	"author": "Sébastien Dumont",
+	"author_uri": "https://sebastiendumont.com",
+	"homepage": "https://cocart.xyz/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/co-cart/cocart-third-party.git"
+	},
+	"bugs": {
+		"url": "https://github.com/co-cart/cocart-third-party/issues"
+	},
+	"license": "GPL-3.0",
+	"copyright": "Copyright (c) 2022, Sébastien Dumont",
+	"description": "Provides support for specific plugins, WooCommerce extensions and web hosts for CoCart.",
+	"tags": "",
+	"keywords": [
+		"wordpress",
+		"package",
+		"woocommerce"
+	],
+	"devDependencies": {},
+	"dependencies": {}
+}
