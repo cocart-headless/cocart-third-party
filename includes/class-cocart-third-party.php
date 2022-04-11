@@ -22,8 +22,9 @@ class Package {
 	 * Initiate Package.
 	 *
 	 * @access public
+	 * @static
 	 */
-	public function init() {
+	public static function init() {
 		self::include_hosts();
 		self::include_plugins();
 	}
@@ -65,20 +66,22 @@ class Package {
 	 * Load support for third-party hosts.
 	 *
 	 * @access public
+	 * @static
 	 */
-	public function include_hosts() {
+	public static function include_hosts() {
 		include_once dirname( __FILE__ ) . '/hosting/pantheon/class-cocart-host-pantheon.php'; // Pantheon.io.
-	}
+	} // END include_hosts()
 
 	/**
 	 * Load support for third-party plugins.
 	 *
 	 * @access public
+	 * @static
 	 */
-	public function include_plugins() {
+	public static function include_plugins() {
 		include_once dirname( __FILE__ ) . '/plugin/jwt-auth-by-useful-team/class-cocart-plugin-jwt-auth.php'; // JWT Auth.
 		include_once dirname( __FILE__ ) . '/plugin/taxjar/class-cocart-plugin-taxjar.php'; // TaxJar.
 		include_once dirname( __FILE__ ) . '/plugin/yoast-seo/class-cocart-plugin-yoast-seo.php'; // Yoast SEO.
-	}
+	} // END include_plugins()
 
 } // END class.
