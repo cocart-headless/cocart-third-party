@@ -4,7 +4,7 @@
  *
  * @author  Sébastien Dumont
  * @package CoCart\Third Party\Hosting
- * @since   2.8.1
+ * @since   1.0.0
  * @license GPL-2.0+
  */
 

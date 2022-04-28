@@ -4,8 +4,7 @@
  *
  * @author  Sébastien Dumont
  * @package CoCart\Third Party
- * @since   2.8.1
- * @version 3.4.0
+ * @since   1.0.0
  * @license GPL-2.0+
  */
 
