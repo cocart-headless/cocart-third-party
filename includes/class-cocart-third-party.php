@@ -19,6 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Package {
 
 	/**
+	 * Plugin Version
+	 *
+	 * @access public
+	 * @static
+	 */
+	public static $version = '1.0.0';
+
+	/**
 	 * Initiate Package.
 	 *
 	 * @access public
