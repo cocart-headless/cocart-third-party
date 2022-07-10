@@ -1,7 +1,7 @@
 {
 	"title": "CoCart Third Party Package",
 	"name": "cocart-third-party",
-	"version": "1.0.0",
+	"version": "4.0.0-beta.1",
 	"private": false,
 	"contributors": [
 		"sebd86",

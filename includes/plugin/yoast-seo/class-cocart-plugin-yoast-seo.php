@@ -5,7 +5,7 @@
  * @author  Sébastien Dumont
  * @package CoCart\Third Party\Plugin
  * @since   1.0.0
- * @license GPL-2.0+
+ * @version 4.0.0
  */
 
 namespace CoCart\ThirdParty;
@@ -25,6 +25,8 @@ class Yoast_SEO {
 	public function __construct() {
 		add_action( 'rest_api_init', function () {
 			unregister_rest_field( 'product', 'yoast_head' );
+			unregister_rest_field( 'product_cat', 'yoast_head' );
+			unregister_rest_field( 'product_tag', 'yoast_head' );
 		}, 11 );
 	}
 
