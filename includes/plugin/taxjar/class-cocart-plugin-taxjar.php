@@ -5,10 +5,12 @@
  * @author  Sébastien Dumont
  * @package CoCart\Third Party\Plugin
  * @since   1.0.0
- * @license GPL-2.0+
+ * @version 4.0.0
  */
 
 namespace CoCart\ThirdParty;
+
+use CoCart\RestApi\Authentication;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,7 +39,7 @@ class TaxJar {
 	 * @return bool
 	 */
 	public function maybe_calculate_tax( $should_calculate ) {
-		if ( CoCart_Authentication::is_rest_api_request() ) {
+		if ( Authentication::is_rest_api_request() ) {
 			$should_calculate = true;
 		}
 

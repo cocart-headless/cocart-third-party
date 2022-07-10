@@ -18,17 +18,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Package {
 
 	/**
-	 * Plugin Version
+	 * Package Version
 	 *
 	 * @access public
+	 *
 	 * @static
+	 *
+	 * @var string
 	 */
-	public static $version = '1.0.0';
+	public static $version = '4.0.0';
 
 	/**
 	 * Initiate Package.
 	 *
 	 * @access public
+	 *
 	 * @static
 	 */
 	public static function init() {
@@ -40,7 +44,9 @@ class Package {
 	 * Return the name of the package.
 	 *
 	 * @access public
+	 *
 	 * @static
+	 *
 	 * @return string
 	 */
 	public static function get_name() {
@@ -51,7 +57,9 @@ class Package {
 	 * Return the version of the package.
 	 *
 	 * @access public
+	 *
 	 * @static
+	 *
 	 * @return string
 	 */
 	public static function get_version() {
@@ -62,7 +70,9 @@ class Package {
 	 * Return the path to the package.
 	 *
 	 * @access public
+	 *
 	 * @static
+	 *
 	 * @return string
 	 */
 	public static function get_path() {
@@ -73,6 +83,7 @@ class Package {
 	 * Load support for third-party hosts.
 	 *
 	 * @access public
+	 *
 	 * @static
 	 */
 	public static function include_hosts() {
@@ -83,6 +94,7 @@ class Package {
 	 * Load support for third-party plugins.
 	 *
 	 * @access public
+	 *
 	 * @static
 	 */
 	public static function include_plugins() {

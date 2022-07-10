@@ -1,6 +1,6 @@
 /**
  * Build automation scripts.
- * 
+ *
  * @package CoCart
  */
 
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 					{
 						from: /public static \$version = \'.*.'/m,
 						to: "public static $version = '<%= pkg.version %>'"
-					}
+				}
 				]
 			},
 			package: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 					{
 						from: /@version .*$/m,
 						to: "@version <%= pkg.version %>"
-					},
+				},
 				]
 			}
 		},

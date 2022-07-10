@@ -14,7 +14,7 @@ if ( ! defined( 'COCART_THIRDPARTY_PACKAGE_FILE' ) ) {
 
 // Include the main CoCart Third Party Package class.
 if ( ! class_exists( 'CoCart\ThirdParty\Package', false ) ) {
-	include_once( untrailingslashit( plugin_dir_path( COCART_THIRDPARTY_PACKAGE_FILE ) ) . '/includes/class-cocart-third-party.php' );
+	include_once untrailingslashit( plugin_dir_path( COCART_THIRDPARTY_PACKAGE_FILE ) ) . '/includes/class-cocart-third-party.php';
 }
 
 /**
@@ -24,7 +24,7 @@ if ( ! class_exists( 'CoCart\ThirdParty\Package', false ) ) {
  */
 if ( ! function_exists( 'cocart_third_party_package' ) ) {
 	function cocart_third_party_package() {
-		return \CoCart\ThirdParty\Package::init();
+		return CoCart\ThirdParty\Package::init();
 	}
 
 	cocart_third_party_package();
