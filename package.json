@@ -1,7 +1,7 @@
 {
 	"title": "CoCart Third Party Package",
 	"name": "cocart-third-party",
-	"version": "4.0.0-beta.1",
+	"version": "4.0.0",
 	"private": false,
 	"contributors": [
 		"sebd86",
@@ -27,7 +27,7 @@
 		"woocommerce"
 	],
 	"devDependencies": {
-		"grunt": "1.5.2",
+		"grunt": "1.5.3",
 		"grunt-text-replace": "0.4.0",
 		"load-grunt-tasks": "5.1.0"
 	},
