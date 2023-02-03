@@ -100,7 +100,6 @@ class Package {
 	public static function include_plugins() {
 		include_once dirname( __FILE__ ) . '/plugin/jwt-auth-by-useful-team/class-cocart-plugin-jwt-auth.php'; // JWT Auth.
 		include_once dirname( __FILE__ ) . '/plugin/taxjar/class-cocart-plugin-taxjar.php'; // TaxJar.
-		include_once dirname( __FILE__ ) . '/plugin/yoast-seo/class-cocart-plugin-yoast-seo.php'; // Yoast SEO.
 	} // END include_plugins()
 
 } // END class.
